@@ -1,0 +1,38 @@
+{
+	"geode": "5.11.2",
+	"gd": {
+		"win": "2.2081"
+	},
+	"version": "v1.0.0",
+	"id": "yourname.click-buffer",
+	"name": "Click Buffer",
+	"developer": "yourname",
+	"description": "Remembers a click made too early and replays it a few frames later, when you land. Adjustable from the pause menu.",
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Enabled",
+			"description": "Turn the click buffer on or off.",
+			"default": true
+		},
+		"buffer-frames": {
+			"type": "int",
+			"name": "Buffer Frames",
+			"description": "How many frames early a click can be and still be replayed when you land. 0 turns the buffer off.",
+			"default": 5,
+			"min": 0,
+			"max": 30,
+			"control": {
+				"slider": true,
+				"input": true,
+				"arrows": true
+			}
+		},
+		"show-indicator": {
+			"type": "bool",
+			"name": "Show Indicator",
+			"description": "Show a very small red face in the corner of the screen while the mod is active.",
+			"default": true
+		}
+	}
+}
